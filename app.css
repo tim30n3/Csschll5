@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Rubik", serif;
+    font-size: 16px;
+}
+
+.background-top{
+    position: absolute;
+    width: 400px;
+    height: 480px;
+    top: 0;
+    left: -210px;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 240px 240px;
+    z-index: -1;
+}
+
+.background-bottom{
+    position: absolute;
+    width: 200px;
+    height: 480px;
+    right: 0;
+    bottom: -265px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 250px 0 0 0;
+    z-index: -1;
+}
+
+.mobile{
+    height: 480px;
+    width: 243px;
+    border-radius: 30px;
+    border: 9px solid hsl(0, 0%, 100%);
+    margin: 65px auto 50px auto;
+    background-color: hsl(270, 20%, 96%);
+    box-shadow: 20px 20px 40px 2px #cfcfcf;
+}
+
+.mobile-camera{
+    position: absolute;
+    height: 20px;
+    width: 130px;
+    margin: 0 47.5px 0 47.5px;
+    border-radius: 0 0 14px 14px;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+}
+
+.mobile-header{
+    border-radius: 20px 20px 5px 5px;
+    width: 100%;
+    height: 62px;
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    padding: 20px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.backArrow{
+    background: url("images/left-arrow.svg") no-repeat;
+    background-size: cover;
+    width: 11px;
+    height: 11px;
+    margin: 0 7px 0 10px;
+}
+
+.avatar{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: solid hsl(0, 0%, 100%) 1px;
+    margin-right: 5px;
+}
+
+.header-article{
+    margin-right: 60px;
+}
+
+.name{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(270, 20%, 96%);
+}
+
+.active-status{
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(0, 0%, 84%);
+}
+
+.more-button{
+    background: url("images/more.svg")no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 10px;
+}
+
+.mobile-flexContainer{
+    display: flex;
+    align-items: center;
+}
+
+.messages-flexContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.message-container{
+    max-width: 128px;
+    height: auto;
+    padding: 10px;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.leftMessageDesign{
+    background-color: #EDE5F4;
+    color: #9d77a7;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.rightMessageDesign{
+    background-color: hsl(0, 0%, 100%);
+    color: #737079;
+    border-radius: 10px 10px 5px 10px;
+}
+
+.dog-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.price-container{
+    width: 163px;
+    background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 10px 10px 10px 5px;
+    padding: 5px;
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.flex-start{
+    align-self: flex-start;
+}
+
+.flex-end{
+    align-self: flex-end;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    border: solid #F161FF 1px;
+}
+.price-flexContainer{
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walkTime{
+    margin-left: 8px;
+}
+
+.priceNumber{
+    margin-right: 10px;
+}
+
+.only-flexbox{
+    display: flex;
+}
+
+.margin-top{
+    margin-top: 3px;
+}
+
+.margin-bottom{
+    margin-bottom: 3px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    width: 93%;
+    margin: 10px auto 0 auto;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+    padding: 8px;
+    font-size: 11px;
+}
+
+.sendButton{
+    width: 24px;
+    height: 24px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    padding: 7px 0;
+}
+
+.sendButton-imgContainer{
+    background: url("images/right-arrow.svg") no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.simple-booking{
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.simple-booking-header{
+    font-size: 43px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.simple-booking-comment{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: hsl(0, 0%, 72%);
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1150px) {
+    .mobile{
+        box-shadow: 12px 12px 40px 2px #cfcfcf;
+        margin: 65px 0 50px 243px;
+    }
+
+    .background-top{
+        height: 580px;
+        width: 500px;
+        left: -100px;
+        border-radius: 0 0 250px 250px;
+    }
+
+    .background-bottom{
+        width: 300px;
+        height: 600px;
+        bottom: 0;
+        border-radius: 300px 0 0 0;
+    }
+
+    .mobile-flexContainer-computer{
+        display: flex;
+        align-items: center;
+    }
+
+    .simple-booking{
+        margin-left: 200px;
+        text-align: left;
+        max-width: 440px;
+    }
+
+
+}
